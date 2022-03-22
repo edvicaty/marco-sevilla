@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "starters/*"
+  ],
+  "scripts": {
+    "storybook": "yarn workspace ui-theme storybook",
+    "storybook:build": "yarn workspace ui-theme build-storybook",
+    "storybook:serve": "npx http-server ./packages/ui-theme/storybook-static",
+    "lint": "eslint .",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "website:develop": "yarn workspace starter gatsby develop",
+    "website:build": "yarn workspace starter gatsby build",
+    "website:serve": "yarn workspace starter gatsby serve",
+    "website:clean": "yarn workspace starter gatsby clean"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.4",
+    "pinst": "^2.1.6",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {}
+}
