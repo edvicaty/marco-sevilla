@@ -1,34 +1,37 @@
 {
+  "name": "marco-sevilla",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "starters/*"
-  ],
-  "scripts": {
-    "storybook": "yarn workspace ui-theme storybook",
-    "storybook:build": "yarn workspace ui-theme build-storybook",
-    "storybook:serve": "npx http-server ./packages/ui-theme/storybook-static",
-    "lint": "eslint .",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "website:develop": "yarn workspace starter gatsby develop",
-    "website:build": "yarn workspace starter gatsby build",
-    "website:serve": "yarn workspace starter gatsby serve",
-    "website:clean": "yarn workspace starter gatsby clean"
+  "description": "Marco Sevilla",
+  "version": "0.1.0",
+  "author": "Edgar Villavicencio <edvicaty@hotmail.com>",
+  "dependencies": {
+    "gatsby": "^4.10.1",
+    "gatsby-plugin-gatsby-cloud": "^4.10.0",
+    "gatsby-plugin-image": "^2.10.0",
+    "gatsby-plugin-manifest": "^4.10.1",
+    "gatsby-plugin-offline": "^5.10.1",
+    "gatsby-plugin-react-helmet": "^5.10.0",
+    "gatsby-plugin-sharp": "^4.10.1",
+    "gatsby-source-filesystem": "^4.10.0",
+    "gatsby-transformer-sharp": "^4.10.0",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^8.11.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.23.1",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "lint-staged": "^12.3.7",
-    "pinst": "^3.0.0",
-    "prettier": "^2.2.1",
-    "husky": "^4.3.0"
+    "prettier": "^2.6.0"
   },
-  "dependencies": {}
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  }
 }
