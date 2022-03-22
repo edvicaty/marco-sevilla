@@ -13,7 +13,7 @@
     "website:develop": "yarn workspace starter gatsby develop",
     "website:build": "yarn workspace starter gatsby build",
     "website:serve": "yarn workspace starter gatsby serve",
-    "website:clean": "yarn workspace starter gatsby clean",
+    "website:clean": "yarn workspace starter gatsby clean"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
