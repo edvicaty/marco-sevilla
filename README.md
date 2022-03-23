@@ -1,1 +1,1 @@
-# Marco Sevilla
+# Gatsby starter theme-ui

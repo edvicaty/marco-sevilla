@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Marco Sevilla`,
-    description: `Marco Sevilla website`,
+    title: `Gatsby Starter`,
+    description: `Gatsby starter`,
     author: `edvicaty`,
+    siteUrl: `https://github.com/edvicaty/`,
   },
   plugins: [
     {
-      resolve: `gatsby-theme-marco-sevilla`,
+      resolve: `gatsby-theme-integrations`,
       options: {
         root: __dirname,
       },

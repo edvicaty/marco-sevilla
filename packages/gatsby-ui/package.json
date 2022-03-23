@@ -1,23 +1,24 @@
 {
-  "name": "gatsby-theme-marco-sevilla",
+  "name": "gatsby-ui",
   "private": true,
-  "description": "Marco Sevilla",
+  "description": "Gatsby UI",
+  "main": "src/index.js",
   "version": "1.0.0",
   "author": "Edgar Villavicencio <edvicaty@hotmail.com>",
   "dependencies": {
     "gatsby": "^4.10.1",
     "gatsby-plugin-gatsby-cloud": "^4.10.0",
     "gatsby-plugin-image": "^2.10.0",
-    "gatsby-plugin-manifest": "^4.10.1",
-    "gatsby-plugin-offline": "^5.10.1",
     "gatsby-plugin-react-helmet": "^5.10.0",
     "gatsby-plugin-sharp": "^4.10.1",
-    "gatsby-source-filesystem": "^4.10.0",
+    "gatsby-plugin-theme-ui" : "^0.14.1",
     "gatsby-transformer-sharp": "^4.10.0",
     "prop-types": "^15.8.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.3.1",
+    "theme-ui": "^0.12.0"
   },
   "devDependencies": {
     "prettier": "^2.6.0"
