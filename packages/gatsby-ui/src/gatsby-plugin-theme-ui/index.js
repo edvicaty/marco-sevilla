@@ -1,12 +1,14 @@
 // const maxWidth = "1360px"
 
-const bBreakpoints = [`640px`, `896px`, `1280px`]
+const bBreakpoints = ["400px", `640px`, `896px`, `1280px`]
 
 const bColors = {
   transparent: "transparent",
   black: "#000",
   white: "#FFFAFA",
+  pureWhite: "#FFFFFF",
   whiteSmoke: "#F5F5F5",
+  translucidBlack: "rgba(0, 0, 0, 0.5)",
 }
 
 const bFontSizes = {
@@ -43,6 +45,15 @@ const bSpaces = {
   xlarge: "128px",
 }
 
+const bSizes = {
+  100: "100px",
+  200: "200px",
+  300: "300px",
+  400: "400px",
+  500: "500px",
+  maxW: "1360px",
+}
+
 const bfontWeights = {
   body: 400,
   heading: 700,
@@ -56,6 +67,7 @@ const bFonts = {
 }
 
 const colors = {
+  ...bColors,
   text: bColors.black,
   background: bColors.white,
   primary: bColors.black,
@@ -72,6 +84,7 @@ export default {
   space: bSpaces,
   shadows: bshadows,
   transitions: btransitions,
+  sizes: bSizes,
   styles: {
     root: {
       body: { fontSize: "lg", fontFamily: "body", bg: "background" },

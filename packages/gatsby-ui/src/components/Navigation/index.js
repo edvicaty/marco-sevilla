@@ -3,43 +3,45 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { Box } from "theme-ui"
 
-const Navigation = ({ sx }) => {
+const Navigation = ({ sx, ...props }) => {
   return (
-    <Box
-      as="nav"
-      __css={{
-        bg: "whiteSmoke",
-        boxShadow: "primary",
-        fontSize: ["lg", "xl"],
-        ...sx,
-      }}
-    >
+    <Box __css={{ bg: "whiteSmoke", boxShadow: "primary" }}>
       <Box
-        as="ul"
+        as="nav"
         __css={{
-          display: "flex",
-          ml: ["medium", "large"],
-          py: "medium",
-          a: {
-            px: ["small", "medium"],
-            py: "medium",
-            "&:hover": {
-              color: "text",
-              boxShadow: "primary",
-              transition: "primary",
-            },
-          },
+          fontSize: ["lg", "xl"],
+          maxWidth: "maxW",
+          m: "0 auto",
+          ...sx,
         }}
+        {...props}
       >
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/">About</Link>
-        </li>
-        <li>
-          <Link to="/">Contact</Link>
-        </li>
+        <Box
+          as="ul"
+          __css={{
+            display: "flex",
+            py: "medium",
+            a: {
+              px: "medium",
+              py: "medium",
+              "&:hover": {
+                color: "text",
+                boxShadow: "primary",
+                transition: "primary",
+              },
+            },
+          }}
+        >
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/">About</Link>
+          </li>
+          <li>
+            <Link to="/">Contact</Link>
+          </li>
+        </Box>
       </Box>
     </Box>
   )
