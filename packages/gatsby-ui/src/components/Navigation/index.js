@@ -21,7 +21,8 @@ const Navigation = ({ sx }) => {
           ml: ["medium", "large"],
           py: "medium",
           a: {
-            p: ["small", "medium"],
+            px: ["small", "medium"],
+            py: "medium",
             "&:hover": {
               color: "text",
               boxShadow: "primary",
