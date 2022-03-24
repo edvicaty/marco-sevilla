@@ -1,11 +1,12 @@
-const maxWidth = "1360px"
+// const maxWidth = "1360px"
 
 const bBreakpoints = [`640px`, `896px`, `1280px`]
 
 const bColors = {
   transparent: "transparent",
   black: "#000",
-  white: "#fff",
+  white: "#FFFAFA",
+  whiteSmoke: "#F5F5F5",
 }
 
 const bFontSizes = {
@@ -22,6 +23,14 @@ const bFontSizes = {
 const bLineHeights = {
   body: 1.5,
   heading: 1.125,
+}
+
+const bshadows = {
+  primary: "rgba(17, 17, 26, 0.1) 0px 0px 16px",
+}
+
+const btransitions = {
+  primary: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
 }
 
 const bSpaces = {
@@ -41,14 +50,14 @@ const bfontWeights = {
 }
 
 const bFonts = {
-  body: "Verdana, sans-serif",
+  body: "Newsreader, serif",
   heading: "Verdana, sans-serif",
   monospace: "Courier, monospace",
 }
 
 const colors = {
   text: bColors.black,
-  background: bColors.transparent,
+  background: bColors.white,
   primary: bColors.black,
   secondary: bColors.white,
 }
@@ -61,9 +70,16 @@ export default {
   lineHeights: bLineHeights,
   fontSizes: bFontSizes,
   space: bSpaces,
+  shadows: bshadows,
+  transitions: btransitions,
   styles: {
     root: {
-      body: { fontSize: "base", fontFamily: "body" },
+      body: { fontSize: "lg", fontFamily: "body", bg: "background" },
+      ul: {
+        listStyle: "none",
+        p: 0,
+      },
+      a: { textDecoration: "none", color: "text" },
     },
   },
 }

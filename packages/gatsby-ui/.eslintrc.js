@@ -1,6 +1,5 @@
 const path = require("path")
 
-const projectRoot = path.resolve(__dirname, "src")
 const rootConfigPath = path.resolve(__dirname, "../../.eslintrc.js")
 
 /**
@@ -14,7 +13,6 @@ const config = {
   },
   settings: {
     "import/resolver": {
-      alias: [["ui", `${projectRoot}/components`]],
       node: {
         paths: ["src"],
       },
