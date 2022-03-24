@@ -10,6 +10,7 @@ const Hero = ({ children, image, ...props }) => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        textAlign: "center",
         height: [200, 300, 400, 500],
         overflow: "hidden",
       }}
@@ -22,7 +23,8 @@ const Hero = ({ children, image, ...props }) => {
           zIndex: 10,
           position: "absolute",
           color: "pureWhite",
-          fontSize: ["2xl", "3xl"],
+          fontSize: ["xl", "2xl", "3xl"],
+          px: "medium",
         }}
       >
         {children}
