@@ -13,14 +13,14 @@ const bColors = {
 }
 
 const bFontSizes = {
-  tiny: ".875rem",
-  base: "1rem",
-  lg: "1.125rem",
-  xl: "1.25rem",
-  "2xl": "1.5rem",
-  "3xl": "2rem",
-  "4xl": "2.25rem",
-  "5xl": "3rem",
+  tiny: "14px",
+  base: "16px",
+  lg: "18px",
+  xl: "20px",
+  "2xl": "30px",
+  "3xl": "40px",
+  "4xl": "50px",
+  "5xl": "60px",
 }
 
 const bLineHeights = {
@@ -108,11 +108,11 @@ export default {
       },
       h2: {
         ...bHeadings.base,
-        fontSize: ["2xl", null, "4xl"],
+        fontSize: ["3xl", null, "4xl"],
       },
       h3: {
         ...bHeadings.base,
-        fontSize: ["xl", null, "3xl"],
+        fontSize: ["2xl", null, "3xl"],
       },
       h4: {
         ...bHeadings.base,
