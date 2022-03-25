@@ -3,5 +3,7 @@ import Navigation from "./components/Navigation"
 import Hero from "./components/Hero"
 import Section from "./components/Section"
 import RichText from "./components/RichText"
+import Gallery from "./components/Gallery"
+import Card from "./components/Card"
 
-export { Button, Navigation, Hero, Section, RichText }
+export { Button, Navigation, Hero, Section, RichText, Gallery, Card }

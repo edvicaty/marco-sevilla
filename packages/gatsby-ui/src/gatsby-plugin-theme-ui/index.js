@@ -4,7 +4,7 @@ const bBreakpoints = ["400px", `640px`, `896px`, `1280px`]
 
 const bColors = {
   transparent: "transparent",
-  black: "#000",
+  black: "#1a2421",
   white: "#FFFAFA",
   pureWhite: "#FFFFFF",
   whiteSmoke: "#F5F5F5",
@@ -48,6 +48,7 @@ const bSpaces = {
 
 const bSizes = {
   100: "100px",
+  150: "150px",
   200: "200px",
   300: "300px",
   400: "400px",

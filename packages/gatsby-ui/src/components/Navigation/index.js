@@ -22,10 +22,11 @@ const Navigation = ({ sx, ...props }) => {
             display: "flex",
             justifyContent: ["space-around", null, "flex-start"],
             p: 0,
+            ml: [0, 0, 0, "medium"],
             py: "medium",
             listStyle: "none",
             a: {
-              px: "medium",
+              px: ["small", "medium"],
               py: "medium",
               boxShadow: [null, null, "secondary"],
               "&:hover": {

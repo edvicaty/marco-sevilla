@@ -4,7 +4,7 @@ import { Box } from "theme-ui"
 
 const Section = ({ children, ...props }) => {
   return (
-    <Box as="section" __css={{ m: "medium" }} {...props}>
+    <Box as="section" __css={{ mx: "medium", my: "large" }} {...props}>
       {children}
     </Box>
   )
