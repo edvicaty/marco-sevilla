@@ -6,7 +6,7 @@ import { Navigation } from "gatsby-ui"
 const Layout = ({ children, ...props }) => {
   return (
     <Box __css={{ bg: "white" }} {...props}>
-      <Navigation sx={{ mb: "medium" }} />
+      <Navigation />
 
       <Box
         __css={{

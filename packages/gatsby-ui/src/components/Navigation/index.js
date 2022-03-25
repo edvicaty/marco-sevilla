@@ -20,10 +20,14 @@ const Navigation = ({ sx, ...props }) => {
           as="ul"
           __css={{
             display: "flex",
+            justifyContent: ["space-around", null, "flex-start"],
+            p: 0,
             py: "medium",
+            listStyle: "none",
             a: {
               px: "medium",
               py: "medium",
+              boxShadow: [null, null, "secondary"],
               "&:hover": {
                 color: "text",
                 boxShadow: "primary",
