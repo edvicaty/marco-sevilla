@@ -7,7 +7,7 @@ const RichText = ({ children, ...props }) => {
     return <Box {...props} dangerouslySetInnerHTML={{ __html: children }} />
   }
 
-  return <div {...props}>{children}</div>
+  return <Box {...props}>{children}</Box>
 }
 
 RichText.propTypes = {

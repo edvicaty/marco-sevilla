@@ -5,5 +5,6 @@ import Section from "./components/Section"
 import RichText from "./components/RichText"
 import Gallery from "./components/Gallery"
 import Card from "./components/Card"
+import Footer from "./components/Footer"
 
-export { Button, Navigation, Hero, Section, RichText, Gallery, Card }
+export { Button, Navigation, Hero, Section, RichText, Gallery, Card, Footer }
