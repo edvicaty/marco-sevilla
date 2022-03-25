@@ -28,7 +28,6 @@ const Footer = ({ sx, ...props }) => {
             flexDirection: "column",
             textAlign: "center",
             p: 0,
-            ml: "medium",
             py: "medium",
             color: "white",
             a: {
