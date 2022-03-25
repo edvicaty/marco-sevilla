@@ -4,7 +4,8 @@ const bBreakpoints = ["400px", `640px`, `896px`, `1280px`]
 
 const bColors = {
   transparent: "transparent",
-  black: "#000",
+  black: "#1a2421",
+  gray: "#353839",
   white: "#FFFAFA",
   pureWhite: "#FFFFFF",
   whiteSmoke: "#F5F5F5",
@@ -29,6 +30,7 @@ const bLineHeights = {
 
 const bshadows = {
   primary: "rgba(17, 17, 26, 0.1) 0px 0px 16px",
+  secondary: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;",
 }
 
 const btransitions = {
@@ -47,6 +49,7 @@ const bSpaces = {
 
 const bSizes = {
   100: "100px",
+  150: "150px",
   200: "200px",
   300: "300px",
   400: "400px",
@@ -62,7 +65,7 @@ const bfontWeights = {
 
 const bFonts = {
   body: "Newsreader, serif",
-  heading: "Verdana, sans-serif",
+  heading: "Newsreader, sans-serif",
   monospace: "Courier, monospace",
 }
 
@@ -72,6 +75,15 @@ const colors = {
   background: bColors.white,
   primary: bColors.black,
   secondary: bColors.white,
+}
+
+const bHeadings = {
+  base: {
+    fontFamily: "heading",
+    fontWeight: "heading",
+    lineHeight: "heading",
+    my: "xsmall",
+  },
 }
 
 export default {
@@ -88,11 +100,32 @@ export default {
   styles: {
     root: {
       body: { fontSize: "lg", fontFamily: "body", bg: "background" },
-      ul: {
-        listStyle: "none",
-        p: 0,
-      },
+
       a: { textDecoration: "none", color: "text" },
+      h1: {
+        ...bHeadings.base,
+        fontSize: ["4xl", null, "5xl"],
+      },
+      h2: {
+        ...bHeadings.base,
+        fontSize: ["2xl", null, "4xl"],
+      },
+      h3: {
+        ...bHeadings.base,
+        fontSize: ["xl", null, "3xl"],
+      },
+      h4: {
+        ...bHeadings.base,
+        fontSize: ["base", null, "2xl"],
+      },
+      h5: {
+        ...bHeadings.base,
+        fontSize: ["tiny", null, "base"],
+      },
+      h6: {
+        ...bHeadings.base,
+        fontSize: "tiny",
+      },
     },
   },
 }

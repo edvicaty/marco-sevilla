@@ -13,6 +13,7 @@ const Hero = ({ children, image, ...props }) => {
         textAlign: "center",
         height: [200, 300, 400, 500],
         overflow: "hidden",
+        mx: [0, 0, 0, "medium"],
       }}
       as="section"
       {...props}

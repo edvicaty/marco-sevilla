@@ -1,13 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Box } from "theme-ui"
-import { Navigation } from "gatsby-ui"
+import { Navigation, Footer } from "gatsby-ui"
 
 const Layout = ({ children, ...props }) => {
   return (
     <Box __css={{ bg: "white" }} {...props}>
-      <Navigation sx={{ mb: "medium" }} />
-
+      <Navigation />
       <Box
         __css={{
           m: "0 auto",
@@ -17,6 +16,7 @@ const Layout = ({ children, ...props }) => {
       >
         {children}
       </Box>
+      <Footer />
     </Box>
   )
 }
