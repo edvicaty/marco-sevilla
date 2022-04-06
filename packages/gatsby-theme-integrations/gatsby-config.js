@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,6 +26,14 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `${__dirname}/src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `ba413gd9v6h5`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
