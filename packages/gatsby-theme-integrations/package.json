@@ -6,6 +6,7 @@
   "author": "Edgar Villavicencio <edvicaty@hotmail.com>",
   "dependencies": {
     "@fontsource/newsreader": "^4.5.2",
+    "dotenv": "^16.0.0",
     "gatsby": "^4.10.1",
     "gatsby-plugin-gatsby-cloud": "^4.10.0",
     "gatsby-plugin-image": "^2.10.0",
@@ -16,6 +17,7 @@
     "gatsby-source-filesystem": "^4.10.0",
     "gatsby-transformer-sharp": "^4.10.0",
     "gatsby-plugin-theme-ui" : "^0.14.1",
+    "gatsby-source-contentful":"^7.9.1",
     "gatsby-ui" : "1.0.0",
     "prop-types": "^15.8.1",
     "react": "^17.0.1",
