@@ -10,7 +10,7 @@ const Hero = ({ children, image, ...props }) => {
         display: "grid",
         position: "relative",
         height: [200, 300, 400, 500],
-        mx: [0, 0, 0, "medium"],
+        mx: [0, 0, 0, "small"],
         color: "pureWhite",
         fontSize: ["xl", "2xl", "3xl"],
         textAlign: "center",
