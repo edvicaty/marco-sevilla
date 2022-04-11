@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { Box } from "theme-ui"
 
 const Gallery = ({ items, ...props }) => {
@@ -16,14 +17,15 @@ const Gallery = ({ items, ...props }) => {
         return (
           <Box __css={{ m: "xsmall" }}>
             <Box
-              as="img"
               __css={{
-                width: ["100%", null, 416],
+                width: ["100%", null, 300],
+                height: ["100%", null, 200],
                 overflow: "hidden",
               }}
-              src={item.image.src}
-              alt={item.image.alt}
-            />
+            >
+              <GatsbyImage image={item.image} />
+            </Box>
+
             <Box __css={{ fontSize: "base", fontStyle: "italic" }}>
               {item.text}
             </Box>

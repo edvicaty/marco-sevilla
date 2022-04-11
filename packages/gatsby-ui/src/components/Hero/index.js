@@ -1,37 +1,42 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { Box } from "theme-ui"
 
 const Hero = ({ children, image, ...props }) => {
   return (
     <Box
       __css={{
+        display: "grid",
         position: "relative",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
         height: [200, 300, 400, 500],
-        overflow: "hidden",
         mx: [0, 0, 0, "medium"],
+        color: "pureWhite",
+        fontSize: ["xl", "2xl", "3xl"],
+        textAlign: "center",
       }}
-      as="section"
       {...props}
     >
-      {/* children */}
-      <Box
-        __css={{
+      <GatsbyImage
+        style={{
+          gridArea: "1/1",
+        }}
+        layout="fullWidth"
+        aspectRatio={3 / 1}
+        formats={["auto", "webp", "avif"]}
+        {...image}
+      />
+      <div
+        style={{
+          gridArea: "1/1",
+          position: "relative",
+          placeItems: "center",
+          display: "grid",
           zIndex: 10,
-          position: "absolute",
-          color: "pureWhite",
-          fontSize: ["xl", "2xl", "3xl"],
-          px: "medium",
         }}
       >
         {children}
-      </Box>
-      {/* Image and overlay */}
-      <Box as="img" __css={{ width: "100%" }} {...image} />
+      </div>
       <Box
         __css={{
           position: "absolute",
