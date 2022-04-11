@@ -3,11 +3,22 @@ import PropTypes from "prop-types"
 import { Box } from "theme-ui"
 
 const RichText = ({ children, ...props }) => {
+  const styles = { img: { maxWidth: "100%" } }
   if (typeof children === "string") {
-    return <Box {...props} dangerouslySetInnerHTML={{ __html: children }} />
+    return (
+      <Box
+        __css={styles}
+        {...props}
+        dangerouslySetInnerHTML={{ __html: children }}
+      />
+    )
   }
 
-  return <Box {...props}>{children}</Box>
+  return (
+    <Box __css={styles} {...props}>
+      {children}
+    </Box>
+  )
 }
 
 RichText.propTypes = {

@@ -12,6 +12,7 @@ const Layout = ({ children, ...props }) => {
           m: "0 auto",
           width: "100%",
           maxWidth: "maxW",
+          minHeight: "80vh",
         }}
       >
         {children}
