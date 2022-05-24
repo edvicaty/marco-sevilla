@@ -22,7 +22,8 @@ const Navigation = ({ sx, ...props }) => {
             display: "flex",
             justifyContent: ["space-around", null, "flex-start"],
             p: 0,
-            ml: [0, 0, 0, "medium"],
+            ml: [0, 0, 0, "small"],
+            mb: [0, 0, 0, "small"],
             py: "medium",
             listStyle: "none",
             a: {
