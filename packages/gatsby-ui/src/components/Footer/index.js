@@ -40,10 +40,7 @@ const Footer = ({ sx, ...props }) => {
             <p>All rights reserved</p>
           </RichText>
           <Box>
-            <Link to="/facebook">
-              <FaFacebook style={{ color: "white" }} />
-            </Link>
-            <Link to="/instagram">
+            <Link to="https://www.instagram.com/marco_sevilla10/?fbclid=IwAR0WtkABFX2O_otmAZB5np9_3ty2YcSk1xPgdsHx9Ox3vzP087dLyWTp-aU">
               <FaInstagram style={{ color: "white" }} />
             </Link>
           </Box>
