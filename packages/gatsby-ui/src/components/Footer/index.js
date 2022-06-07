@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { Box } from "theme-ui"
-import { FaFacebook, FaInstagram } from "react-icons/fa"
+import { FaInstagram } from "react-icons/fa"
 import RichText from "../RichText"
 
 const Footer = ({ sx, ...props }) => {
