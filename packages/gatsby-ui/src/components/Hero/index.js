@@ -9,8 +9,6 @@ const Hero = ({ children, image, ...props }) => {
       __css={{
         display: "grid",
         position: "relative",
-        height: [200, 300, 400, 500],
-        mx: [0, 0, 0, "small"],
         color: "pureWhite",
         fontSize: ["xl", "2xl", "3xl"],
         textAlign: "center",
@@ -35,7 +33,17 @@ const Hero = ({ children, image, ...props }) => {
           zIndex: 10,
         }}
       >
-        {children}
+        <Box
+          __css={{
+            width: "100%",
+            maxWidth: "maxW",
+            mx: "auto",
+            px: "small",
+            my: "medium",
+          }}
+        >
+          {children}
+        </Box>
       </div>
       <Box
         __css={{

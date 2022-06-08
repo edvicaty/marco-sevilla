@@ -20,7 +20,7 @@ const Navigation = ({ sx, ...props }) => {
           as="ul"
           __css={{
             display: "flex",
-            justifyContent: ["space-around", null, "flex-start"],
+            justifyContent: ["flex-end"],
             p: 0,
             ml: [0, 0, 0, "small"],
             mb: [0, 0, 0, "small"],

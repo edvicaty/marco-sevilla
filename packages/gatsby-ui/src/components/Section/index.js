@@ -2,9 +2,19 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Box } from "theme-ui"
 
-const Section = ({ children, ...props }) => {
+const Section = ({ children, margin, ...props }) => {
   return (
-    <Box as="section" __css={{ mx: "small", my: "large" }} {...props}>
+    <Box
+      as="section"
+      __css={{
+        my: "large",
+        width: "100%",
+        maxWidth: "maxW",
+        mx: "auto",
+        px: "small",
+      }}
+      {...props}
+    >
       {children}
     </Box>
   )
@@ -12,10 +22,12 @@ const Section = ({ children, ...props }) => {
 
 Section.propTypes = {
   children: PropTypes.node,
+  margin: PropTypes.bool,
 }
 
 Section.defaultProps = {
   children: undefined,
+  margin: true,
 }
 
 export default Section

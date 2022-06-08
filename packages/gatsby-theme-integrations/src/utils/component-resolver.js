@@ -14,7 +14,9 @@ export const resolve = entity => {
       <Hero image={{ image: entity.image.gatsbyImageData, alt: "" }}>
         <RichText>{entity?.body?.childMarkdownRemark.html}</RichText>
         {entity?.cta?.url && (
-          <Button to={entity?.cta?.url}>{entity?.cta?.linkText}</Button>
+          <Button sx={{ my: "medium" }} to={entity?.cta?.url}>
+            {entity?.cta?.linkText}
+          </Button>
         )}
       </Hero>
     )
