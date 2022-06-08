@@ -9,9 +9,6 @@ const Layout = ({ children, ...props }) => {
       <Navigation />
       <Box
         __css={{
-          m: "0 auto",
-          width: "100%",
-          maxWidth: "maxW",
           minHeight: "80vh",
         }}
       >
