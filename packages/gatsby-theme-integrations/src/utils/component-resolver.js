@@ -1,5 +1,12 @@
 import React from "react"
-import { Button, Hero, Section, RichText, Gallery } from "gatsby-ui"
+import {
+  Button,
+  Hero,
+  Section,
+  RichText,
+  Gallery,
+  HeroTwoColumns,
+} from "gatsby-ui"
 
 export const resolve = entity => {
   if (entity.__typename.endsWith(`ContentfulTextBlock`)) {
@@ -19,6 +26,23 @@ export const resolve = entity => {
           </Button>
         )}
       </Hero>
+    )
+  }
+  if (entity.__typename.endsWith(`ContentfulHeroTwoColumns`)) {
+    return (
+      <Section>
+        <HeroTwoColumns
+          image={{ image: entity.image.gatsbyImageData, alt: "" }}
+          rightImage={entity.rightImage}
+        >
+          <RichText>{entity?.body?.childMarkdownRemark.html}</RichText>
+          {entity?.cta?.url && (
+            <Button sx={{ my: "medium" }} to={entity?.cta?.url}>
+              {entity?.cta?.linkText}
+            </Button>
+          )}
+        </HeroTwoColumns>
+      </Section>
     )
   }
   if (entity.__typename.endsWith(`ContentfulImageGallery`)) {

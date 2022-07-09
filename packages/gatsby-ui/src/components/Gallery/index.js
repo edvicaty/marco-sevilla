@@ -10,6 +10,7 @@ const Gallery = ({ items, ...props }) => {
         display: "flex",
         flexWrap: "wrap",
         justifyContent: "space-around",
+        alignItems: "center",
       }}
       {...props}
     >
@@ -19,8 +20,8 @@ const Gallery = ({ items, ...props }) => {
             <Box
               __css={{
                 width: ["100%", null, 300],
-                height: ["100%", null, 200],
                 overflow: "hidden",
+                boxShadow: "tertiary",
               }}
             >
               <GatsbyImage image={item.image} />
