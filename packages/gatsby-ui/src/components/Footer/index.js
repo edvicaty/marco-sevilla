@@ -36,11 +36,11 @@ const Footer = ({ sx, ...props }) => {
           }}
         >
           <RichText>
-            <p>2022 © Marco Sevilla</p>
+            <p>2022 © MAS Visual Content</p>
             <p>All rights reserved</p>
           </RichText>
           <Box>
-            <Link to="https://www.instagram.com/marco_sevilla10/?fbclid=IwAR0WtkABFX2O_otmAZB5np9_3ty2YcSk1xPgdsHx9Ox3vzP087dLyWTp-aU">
+            <Link to="https://www.instagram.com/mas_visualcontent/?igshid=YmMyMTA2M2Y%3D">
               <FaInstagram style={{ color: "white" }} />
             </Link>
           </Box>

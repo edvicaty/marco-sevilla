@@ -31,6 +31,7 @@ const bLineHeights = {
 const bshadows = {
   primary: "rgba(17, 17, 26, 0.1) 0px 0px 16px",
   secondary: "rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;",
+  tertiary: "rgba(17, 17, 26, 0.5) 0px 0px 16px",
 }
 
 const btransitions = {

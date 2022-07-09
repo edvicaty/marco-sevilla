@@ -4,7 +4,7 @@ import { Box } from "theme-ui"
 
 const RichText = ({ children, ...props }) => {
   const styles = {
-    img: { maxWidth: ["100%", null, "60%"] },
+    img: { width: "100%" },
     iframe: {
       display: "block",
       mx: "auto",

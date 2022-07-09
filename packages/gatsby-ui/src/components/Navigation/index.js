@@ -20,14 +20,12 @@ const Navigation = ({ sx, ...props }) => {
           as="ul"
           __css={{
             display: "flex",
-            justifyContent: ["flex-end"],
             p: 0,
             ml: [0, 0, 0, "small"],
-            mb: [0, 0, 0, "small"],
             py: "medium",
             listStyle: "none",
             a: {
-              px: ["small", "medium"],
+              px: ["xsmall", "small", null, "medium"],
               py: "medium",
               boxShadow: [null, null, "secondary"],
               "&:hover": {
@@ -40,6 +38,9 @@ const Navigation = ({ sx, ...props }) => {
         >
           <li>
             <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/packages">Packages</Link>
           </li>
           <li>
             <Link to="/about">About</Link>

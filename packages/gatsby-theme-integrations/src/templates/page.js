@@ -47,6 +47,23 @@ export const pageQuery = graphql`
             linkText
           }
         }
+        ... on ContentfulHeroTwoColumns {
+          __typename
+          id
+          rightImage
+          body {
+            childMarkdownRemark {
+              html
+            }
+          }
+          image {
+            gatsbyImageData(placeholder: BLURRED)
+          }
+          cta: components {
+            url
+            linkText
+          }
+        }
         ... on ContentfulImageGallery {
           __typename
           id

@@ -6,5 +6,16 @@ import RichText from "./components/RichText"
 import Gallery from "./components/Gallery"
 import Card from "./components/Card"
 import Footer from "./components/Footer"
+import HeroTwoColumns from "./components/HeroTwoColumns"
 
-export { Button, Navigation, Hero, Section, RichText, Gallery, Card, Footer }
+export {
+  Button,
+  Navigation,
+  Hero,
+  Section,
+  RichText,
+  Gallery,
+  Card,
+  Footer,
+  HeroTwoColumns,
+}
