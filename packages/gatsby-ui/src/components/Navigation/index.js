@@ -22,7 +22,7 @@ const Navigation = ({ sx, ...props }) => {
             display: "flex",
             justifyContent: ["flex-end"],
             p: 0,
-            ml: [0, 0, 0, "small"],
+            ml: [0, 0, 0, "small", 0],
             mb: [0, 0, 0, "small"],
             py: "medium",
             listStyle: "none",
